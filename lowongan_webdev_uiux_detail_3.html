@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Designer - PT VINIX7 Aurum | Vinix Career</title>
+
+    <!-- Google Font Public Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR (SAMA DENGAN BERANDA) -->
+<nav class="navbar">
+    <div class="nav-container">
+        <img src="logo/logo vinix navbar.png" alt="Vinix Logo" class="logo">
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="lowongan.html">Lowongan</a></li>
+            <li><a href="bookmarks.html">Favorit</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- BACK BUTTON -->
+<div class="job-controls">
+    <button class="back-btn" onclick="history.back()"><</button>
+</div>
+
+<!-- DETAIL LOWONGAN -->
+<section class="job-detail-section">
+  <div class="job-detail-container">
+    <div class="job-header">
+      <img src="logo/logo out of asia.png" alt="Logo PT VINIX7 Aurum" class="company-logo-large">
+      <h1 class="job-title">Front End Developer</h1>
+      <p class="company-name">PT. Out Of Asia</p>
+    </div>
+
+    <div class="job-content-wrapper">
+      <!-- KONTEN UTAMA -->
+      <div class="job-main-content">
+        <h2>Deskripsi Lowongan</h2>
+        <ul class="job-list">
+          <li>Menguasai HTML, CSS, JavaScript, dan memiliki kemampuan untuk mengoptimalkan kinerja website.</li>
+          <li>Mampu bekerja dalam tim maupun individu.</li>
+          <li>Mengembangkan antarmuka pengguna yang responsif dan interaktif.</li>
+          <li>Memastikan kompatibilitas antarmuka di berbagai perangkat dan browser.</li>
+          <li>Bekerja sama dengan desainer dan backend developer untuk implementasi fitur.</li>
+        </ul>
+
+        <h2>Kualifikasi</h2>
+        <ul class="job-list">
+          <li>Berdomisili di Jakarta</li>
+          <li>Mahasiswa/Fresh Graduate Jurusan Teknik Informatika, Sistem Informasi, atau bidang terkait</li>
+          <li>Diprioritaskan lulusan Divisi Web Development</li>
+          <li>Diprioritaskan memiliki pengalaman kerja minimal 1 tahun</li>
+        </ul>
+
+        <h2>Tanggung Jawab</h2>
+        <ul class="job-list">
+          <li>Mengembangkan antarmuka pengguna menggunakan HTML, CSS, dan JavaScript.</li>
+          <li>Mengintegrasikan data dari backend services.</li>
+          <li>Memastikan aplikasi berfungsi dengan baik di berbagai browser dan perangkat.</li>
+          <li>Menerapkan prinsip-prinsip desain responsif dan aksesibilitas.</li>
+          <li>Melakukan pengujian dan debugging kode.</li>
+        </ul>
+
+        <h2>Skill</h2>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Framework Frontend</span>
+          <span class="skill-tag">Pengoptimalan Kinerja</span>
+          <span class="skill-tag">Kerja Tim</span>
+        </div>
+      </div>
+
+      <!-- SIDEBAR INFO -->
+      <div class="job-sidebar">
+        <div class="info-box">
+          <div class="info-item">
+            <img src="icons/lokasi.png" alt="Lokasi" class="icon">
+            <span>Jakarta, Indonesia</span>
+          </div>
+          <div class="info-item">
+            <img src="icons/icon gaji.png" alt="Gaji" class="icon">
+            <div class="info-text">
+              <span>Rp 3 - 5 Juta</span>
+              <small>Gaji perbulan</small>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="icons/email.png" alt="Gaji" class="icon">
+            <div class="info-text">
+              <span><a href="https://www.instagram.com/vinix7idn?igsh=MWNwODZzd3Z3bGU1MQ=="></a>Vinix7idn</span>
+              <small>Kontak Perusahaan</small>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="icons/icon full time.png" alt="Waktu Kerja" class="icon">
+            <div class="info-text">
+              <span>Full Time</span>
+              <small>Jenis Lowongan</small>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="icons/divisi.png" alt="Kategori" class="icon">
+            <div class="info-text">
+              <span>Web Development & UI/UX</span>
+            <small>Bidang Pekerjaan</small>
+            </div>
+          </div>
+          <div class="info-item">
+            <img src="icons/deadline.png" alt="Deadline" class="icon">
+            <div class="info-text">
+              <span>20 Januari 2026</span>
+            <small>Batas Akhir Lamaran</small>
+            </div>
+          </div>
+        </div>
+
+        <a href="pendaftaran.html?posisi=Front%20End%20Developer%20-%20PT.%20Out%20Of%20Asia" class="apply-now-btn">Lamar Sekarang</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer SECTION -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h2 class="footer-title">PT. Vinix7 Aurum</h2>
+      <p class="footer-desc">
+        Bergabunglah menjadi bagian dari jaringan talenta terbaik dan dapatkan rekomendasi peluang kerja yang diprioritaskan.
+      </p>
+
+      <form class="subscribe-form" action="mailto:vinix@domain.com?subject=Subscribe Informasi Lowongan" method="POST" enctype="text/plain">
+        <input type="email" placeholder="Masukkan email kamu" required>
+        <button type="submit" class="btn-subscribe">Subscribe</button>
+      </form>
+
+      <p class="footer-small">
+        Dengan berlangganan, kamu akan mendapatkan rekomendasi peluang kerja terbaik dan prioritas dalam proses seleksi.
+      </p>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-links">
+        <div class="footer-nav">
+          <h3>Navigasi</h3>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Lowongan</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h3>Ikuti Kami</h3>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/vinix7idn?igsh=MWNwODZzd3Z3bGU1MQ==" target="_blank">
+              <img src="icons/instagram.png" alt="Instagram">
+              <span>@vinix7idn</span>
+            </a>
+            <a href="https://www.tiktok.com/@vinix7idn?_r=1&_t=ZS-91WL2Tsd5MN" target="_blank">
+              <img src="icons/tiktok.png" alt="TikTok">
+              <span>@vinix7idn</span>
+            </a>
+            <a href="https://share.google/TO44qzAfZt3rzza9P" target="_blank">
+              <img src="icons/linkedin.png" alt="LinkedIn">
+              <span>VINIX7</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 PT. Vinix7 Aurum — All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

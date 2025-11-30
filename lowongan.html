@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowongan - Vinix Career</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <img src="logo/logo vinix navbar.png" alt="Vinix Logo" class="logo">
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="lowongan.html" class="active">Lowongan</a></li>
+            <li><a href="bookmarks.html">Favorit</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero-blue">
+  <div class="banner-container">
+      <span class="banner-label">Lowongan</span>
+      <p class="banner-desc">Temukan berbagai lowongan kerja yang sesuai dengan keahlian dan minat Anda. <br>
+        Kirim lamaran sekarang dan wujudkan impian karir Anda!</p>
+  </div>
+</section>
+
+<div class="job-controls">
+    <button class="back-btn" onclick="history.back()"><</button>
+    
+    <div class="search-wrapper">
+      <img src="icons/search.png" alt="Search" class="search-icon-lowongan">
+      <input type="text" class="lowongan-search" placeholder="Cari Lowongan">
+  </div>
+
+    <select class="filter-select" id="keahlian">
+        <option value="">Bidang Keahlian</option>
+        <option value="lowongan_webdev_uiux.html">Web Development & UI/UX</option>
+        <option value="lowongan_entre_bisdig.html">Entrepreneurship / Bisnis Digital</option>
+        <option value="lowongan_cyber_security.html">Cyber Security</option>
+        <option value="lowongan_data_scientist.html">Data Scientist</option>
+        <option value="lowongan_digital_forensic.html">Digital Forensic</option>
+    </select>
+
+    <button class="filter-reset">Reset</button>
+</div>
+
+<section class="rekomendasi">
+  <div class="rekom-container">
+    <h2>Semua Lowongan</h2>
+      <div class="jobs-wrapper">
+        <div class="job-card" data-job-id="job-1">
+          <div class="bookmark-container">
+            <button class="bookmark-btn" data-job-id="job-1" onclick="handleBookmarkToggle(this)">
+              <img src="icons/love23.png" alt="Favorit" class="bookmark-icon">
+            </button>
+          </div>
+
+          <div class="card-top">
+              <img src="logo/logo PT vinix.png" alt="Logo" class="company-logo">
+              <div class="company-text">
+                <span>PT. VINIX7 Aurum</span>
+                <small>Yogyakarta, Indonesia</small>
+              </div>
+          </div>
+
+          <hr class="divider">
+
+          <h3 class="job-title">UI/UX Designer</h3>
+          <p class="job-desc">Memiliki kemampuan riset & analisis, desain visual & interaksi, serta mampu membuat user flow dan prototype yang efektif.</p>
+
+          <h5 class="job-subtittle">Berlaku sampai: 10 Desember 2025</h5>
+          <div class="job-info">
+            <div class="info-item">
+              <img src="icons/icon full time.png" class="icon">
+              <span>Full Time</span>
+            </div>
+            <div class="info-item">
+              <img src="icons/icon gaji.png" class="icon">
+              <span>Rp 6 - 9 Juta</span>
+            </div>
+          </div>
+
+          <a href="lowongan_webdev_uiux_detail_1.html" class="apply-btn">Lamar</a>
+        </div>
+
+          <div class="job-card" data-job-id="job-2">
+            <div class="card-top">
+              <img src="logo/logo ilc.png" alt="Logo" class="company-logo">
+              <div class="company-text">
+                <span>PT. ILC Kreasi</span>
+                <small>Jakarta, Indonesia</small>
+              </div>
+            </div>
+            <div class="bookmark-container">
+              <button class="bookmark-btn" data-job-id="job-2" onclick="handleBookmarkToggle(this)">
+                <img src="icons/love23.png" alt="Favorit" class="bookmark-icon">
+              </button>
+            </div>
+
+            <hr class="divider">
+
+            <h3 class="job-title">Junior Data Analyst</h3>
+            <p class="job-desc">Bertanggung jawab pada analisis data, pembuatan laporan, visualisasi data, dan memberikan insight untuk strategi bisnis.</p>
+
+            <h5 class="job-subtittle">Berlaku sampai: 04 Januari 2026</h5>
+
+            <div class="job-info">
+              <div class="info-item">
+                <img src="icons/icon full time.png" class="icon">
+                <span>Intership</span>
+              </div>
+              <div class="info-item">
+                <img src="icons/icon gaji.png" class="icon">
+                <span>Rp 2,5 - 3 Juta</span>
+              </div>
+            </div>
+
+          <a href="lowongan_data_scientist_detail_1.html" class="apply-btn">Lamar</a>
+          </div>
+
+          <div class="job-card" data-job-id="job-3">
+            <div class="card-top">
+                <img src="logo/logo telkom.png" alt="Logo" class="company-logo">
+              <div class="company-text">
+                <span>PT. Telkom Indonesia</span>
+                <small>Jakarta, Indonesia</small>
+              </div>
+            </div>
+            <div class="bookmark-container">
+              <button class="bookmark-btn" data-job-id="job-3" onclick="handleBookmarkToggle(this)">
+                <img src="icons/love23.png" alt="Favorit" class="bookmark-icon">
+              </button>
+            </div>
+
+            <hr class="divider">
+
+            <h3 class="job-title">Data Visualization Specialist</h3>
+            <p class="job-desc">Memiliki kemampuan kemampuan Riset & Analisis Data, Desain Visual, dan Keahlian dalam alat visualisasi seperti Tableau atau Power BI.</p>
+
+            <h5 class="job-subtittle">Berlaku sampai: 17 Januari 2026</h5>
+            <div class="job-info">
+              <div class="info-item">
+                <img src="icons/icon full time.png" class="icon">
+                <span>Full Time</span>
+              </div>
+              <div class="info-item">
+                <img src="icons/icon gaji.png" class="icon">
+                <span>Rp 5 - 6 Juta</span>
+              </div>
+            </div>
+
+            <a href="lowongan_data_scientist_detail_2.html" class="apply-btn">Lamar</a>
+          </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="jobs-wrapper">
+          <div class="job-card" data-job-id="job-1">
+            <div class="card-top">
+                <img src="logo/logo PT vinix.png" alt="Logo" class="company-logo">
+                <div class="company-text">
+                  <span>PT. VINIX7 Aurum</span>
+                  <small>Yogyakarta, Indonesia</small>
+                </div>
+            </div>
+            <div class="bookmark-container">
+              <button class="bookmark-btn" data-job-id="job-1" onclick="handleBookmarkToggle(this)">
+                <img src="icons/love23.png" alt="Favorit" class="bookmark-icon">
+              </button>
+            </div>
+
+            <hr class="divider">
+
+            <h3 class="job-title">UI/UX Designer</h3>
+            <p class="job-desc">Memiliki kemampuan riset & analisis, desain visual & interaksi, serta mampu membuat user flow dan prototype yang efektif.</p>
+
+            <h5 class="job-subtittle">Berlaku sampai: 10 Desember 2025</h5>
+            <div class="job-info">
+              <div class="info-item">
+                <img src="icons/icon full time.png" class="icon">
+                <span>Full Time</span>
+              </div>
+              <div class="info-item">
+                <img src="icons/icon gaji.png" class="icon">
+                <span>Rp 6 - 9 Juta</span>
+              </div>
+            </div>
+
+            <a href="lowongan_webdev_uiux_detail_1.html" class="apply-btn">Lamar</a>
+
+          </div>
+          <div class="job-card" data-job-id="job-2">
+            <div class="card-top">
+              <img src="logo/logo ilc.png" alt="Logo" class="company-logo">
+              <div class="company-text">
+                <span>PT. ILC Kreasi</span>
+                <small>Jakarta, Indonesia</small>
+              </div>
+            </div>
+            <div class="bookmark-container">
+              <button class="bookmark-btn" data-job-id="job-2" onclick="handleBookmarkToggle(this)">
+                <img src="icons/love23.png" alt="Favorit" class="bookmark-icon">
+              </button>
+            </div>
+
+            <hr class="divider">
+
+            <h3 class="job-title">Junior Data Analyst</h3>
+            <p class="job-desc">Bertanggung jawab pada analisis data, pembuatan laporan, visualisasi data, dan memberikan insight untuk strategi bisnis.</p>
+
+            <h5 class="job-subtittle">Berlaku sampai: 04 Januari 2026</h5>
+
+            <div class="job-info">
+              <div class="info-item">
+                <img src="icons/icon full time.png" class="icon">
+                <span>Intership</span>
+              </div>
+              <div class="info-item">
+                <img src="icons/icon gaji.png" class="icon">
+                <span>Rp 2,5 - 3 Juta</span>
+              </div>
+            </div>
+
+          <a href="lowongan_data_scientist_detail_1.html" class="apply-btn">Lamar</a>
+          </div>
+
+          <div class="job-card" data-job-id="job-3">
+            <div class="card-top">
+                <img src="logo/logo telkom.png" alt="Logo" class="company-logo">
+              <div class="company-text">
+                <span>PT. Telkom Indonesia</span>
+                <small>Jakarta, Indonesia</small>
+              </div>
+            </div>
+            <div class="bookmark-container">
+              <button class="bookmark-btn" data-job-id="job-3" onclick="handleBookmarkToggle(this)">
+                <img src="icons/love23.png" alt="Favorit" class="bookmark-icon">
+              </button>
+            </div>
+
+            <hr class="divider">
+
+            <h3 class="job-title">Data Visualization Specialist</h3>
+            <p class="job-desc">Memiliki kemampuan kemampuan Riset & Analisis Data, Desain Visual, dan Keahlian dalam alat visualisasi seperti Tableau atau Power BI.</p>
+
+            <h5 class="job-subtittle">Berlaku sampai: 17 Januari 2026</h5>
+            <div class="job-info">
+              <div class="info-item">
+                <img src="icons/icon full time.png" class="icon">
+                <span>Full Time</span>
+              </div>
+              <div class="info-item">
+                <img src="icons/icon gaji.png" class="icon">
+                <span>Rp 5 - 6 Juta</span>
+              </div>
+            </div>
+
+            <a href="lowongan_data_scientist_detail_2.html" class="apply-btn">Lamar</a>
+          </div>
+        </div>
+
+    </div>
+</section>
+<br>
+<br> 
+    <footer class="footer">
+      <div class="footer-container">
+
+        <div class="footer-left">
+          <h2 class="footer-title">PT. Vinix7 Aurum</h2>
+          <p class="footer-desc">
+            Bergabunglah menjadi bagian dari jaringan talenta terbaik dan dapatkan rekomendasi peluang kerja yang diprioritaskan.
+          </p>
+
+          <form class="subscribe-form" action="mailto:vinix@domain.com?subject=Subscribe Informasi Lowongan" method="POST" enctype="text/plain">
+            <input type="email" placeholder="Masukkan email kamu" required>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </form>
+
+          <p class="footer-small">
+            Dengan berlangganan, kamu akan mendapatkan rekomendasi peluang kerja terbaik dan prioritas dalam proses seleksi.
+          </p>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-links">
+            <div class="footer-nav">
+              <h3>Navigasi</h3>
+              <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Lowongan</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+
+
+            <div class="footer-social">
+              <h3>Ikuti Kami</h3>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/vinix7idn?igsh=MWNwODZzd3Z3bGU1MQ==" target="_blank">
+                  <img src="icons/instagram.png" alt="Instagram">
+                  <span>@vinix7idn</span>
+                </a>
+                <a href="https://www.tiktok.com/@vinix7idn?_r=1&_t=ZS-91WL2Tsd5MN" target="_blank">
+                  <img src="icons/tiktok.png" alt="TikTok">
+                  <span>@vinix7idn</span>
+                </a>
+                <a href="https://share.google/TO44qzAfZt3rzza9P" target="_blank">
+                  <img src="icons/linkedin.png" alt="LinkedIn">
+                  <span>VINIX7</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 PT. Vinix7 Aurum — All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
+

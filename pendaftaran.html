@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran Vinix7</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js" defer></script>
+
+</head>
+<body class="pendaftaran-page">
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="logo/logo vinix navbar.png" alt="Vinix Logo" class="logo">
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang Kami</a></li>
+                <li><a href="lowongan.html">Lowongan</a></li>
+                <li><a href="bookmarks.html">Favorit</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-blue">
+        <div class="banner-container">
+            <span class="banner-label">Lowongan</span>
+            <p class="banner-desc">Temukan berbagai lowongan kerja yang sesuai dengan keahlian dan minat Anda. <br>
+            Kirim lamaran sekarang dan wujudkan impian karir Anda!</p>
+        </div>
+      </section>
+
+      <div class="job-controls">
+        <button class="back-btn" onclick="history.back()"><</button>
+      </div>
+<section class="main-content">
+    <div class="container">
+        <div class="form-card">
+            <div class="grid">
+                <div class="form-section">
+                    <h3>1. Data Diri</h3>
+
+                    <label>Nama Lengkap</label>
+                    <input type="text" placeholder="Masukkan Nama Anda">
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Masukkan Email Anda">
+
+                    <label>Nomor WhatsApp</label>
+                    <input type="text" placeholder="Masukkan Nomor WhatsApp Aktif">
+
+                    <label>Domisili</label>
+                    <input type="text" list="locations" placeholder="Masukkan Domisili Anda">
+                    <label>Domisili</label>
+                    <select name="domisili">
+                        <option value="">Pilih Domisili</option>
+                        <option value="Jakarta, DKI Jakarta, Indonesia">Jakarta, DKI Jakarta, Indonesia</option>
+                        <option value="Surabaya, Jawa Timur, Indonesia">Surabaya, Jawa Timur, Indonesia</option>
+                        <option value="Bandung, Jawa Barat, Indonesia">Bandung, Jawa Barat, Indonesia</option>
+                        <option value="Medan, Sumatera Utara, Indonesia">Medan, Sumatera Utara, Indonesia</option>
+                        <option value="Palembang, Sumatera Selatan, Indonesia">Palembang, Sumatera Selatan, Indonesia</option>
+                        <option value="Makassar, Sulawesi Selatan, Indonesia">Makassar, Sulawesi Selatan, Indonesia</option>
+                        <option value="Semarang, Jawa Tengah, Indonesia">Semarang, Jawa Tengah, Indonesia</option>
+                        <option value="Yogyakarta, DI Yogyakarta, Indonesia">Yogyakarta, DI Yogyakarta, Indonesia</option>
+                        <option value="Surakarta, Jawa Tengah, Indonesia">Surakarta, Jawa Tengah, Indonesia</option>
+                        <option value="Denpasar, Bali, Indonesia">Denpasar, Bali, Indonesia</option>
+                        <option value="Banjarmasin, Kalimantan Selatan, Indonesia">Banjarmasin, Kalimantan Selatan, Indonesia</option>
+                        <option value="Balikpapan, Kalimantan Timur, Indonesia">Balikpapan, Kalimantan Timur, Indonesia</option>
+                        <option value="Manado, Sulawesi Utara, Indonesia">Manado, Sulawesi Utara, Indonesia</option>
+                        <option value="Ambon, Maluku, Indonesia">Ambon, Maluku, Indonesia</option>
+                        <option value="Jayapura, Papua, Indonesia">Jayapura, Papua, Indonesia</option>
+                    </select>
+
+                    <label>Jenis Kelamin</label>
+                    <select name="jenisKelamin">
+                        <option value="">Pilih Jenis Kelamin</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                    <label>Tanggal Lahir</label>
+                    <input type="date" name="tanggalLahir">
+                </div>
+
+                <!-- INFORMASI PENDIDIKAN -->
+                <div class="form-section">
+                    <h3>2. Informasi Pendidikan & Pengalaman</h3>
+                    <label>Pendidikan Terakhir</label>
+                    <select name="pendidikan">
+                        <option value="">Pilih Pendidikan Terakhir</option>
+                        <option value="SMA/SMK">SMA/SMK</option>
+                        <option value="D3">D3</option>
+                        <option value="S1">S1</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                    </select>
+                    <label>Pengalaman Bekerja</label>
+                    <select name="pengalaman">
+                        <option value="">Pilih Pengalaman</option>
+                        <option value="Belum ada">Belum ada</option>
+                        <option value="Kurang dari 1 tahun">Kurang dari 1 tahun</option>
+                        <option value="1-2 tahun">1-2 tahun</option>
+                        <option value="2-3 tahun">2-3 tahun</option>
+                        <option value="Lebih dari 3 tahun">Lebih dari 3 tahun</option>
+                    </select>
+                    <label>Bidang Keahlian</label>
+                    <select name="bidangKeahlian">
+                        <option value="">Pilih Bidang Keahlian</option>
+                        <option value="Web Development& UI/UX">Web Development& UI/UX</option>
+                        <option value="Entrepeneurship / Bisnis Digital">Entrepeneurship / Bisnis Digital</option>
+                        <option value="Cyber Security">Cyber Security</option>
+                        <option value="Data Scientist">Data Scientist</option>
+                        <option value="Digital Forensic">Digital Forensic</option>
+                    </select>
+                    <label>Deskripsi Diri & Keahlian</label>
+                    <textarea placeholder="Deskripsikan diri secara sederhana dan pengalamanmu di bidang keahlian terkait"></textarea>
+                    <label>Link Dokumen Pendukung</label>
+                    <input type="text" placeholder="Masukkan Link Dokumen Pendukung">
+
+                    <small class="note">
+                        *Dokumen Pendukung berupa link Google Drive yang berisi:
+                        <br> - CV
+                        <br> - Portofolio
+                        <br> - Sertifikat Program Vinix7
+                        <br> - Sertifikat Pengalaman Relevan (opsional)
+                        <br><br>*Link harus open access
+                        <br>*Informasi penerimaan akan dikirim melalui Email/ WhatsApp
+                    </small>
+                </div>
+            </div>
+            <button class="btn-submit" type="button" onclick="submitForm()">Kirim</button>
+        </div>
+    </div>
+</section>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div>
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Mengirim data...</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+  
+          <div class="footer-left">
+            <h2 class="footer-title">PT. Vinix7 Aurum</h2>
+            <p class="footer-desc">
+              Bergabunglah menjadi bagian dari jaringan talenta terbaik dan dapatkan rekomendasi peluang kerja yang diprioritaskan.
+            </p>
+  
+            <form class="subscribe-form" action="mailto:vinix@domain.com?subject=Subscribe Informasi Lowongan" method="POST" enctype="text/plain">
+              <input type="email" placeholder="Masukkan email kamu" required>
+              <button type="submit" class="btn-subscribe">Subscribe</button>
+            </form>
+  
+            <p class="footer-small">
+              Dengan berlangganan, kamu akan mendapatkan rekomendasi peluang kerja terbaik dan prioritas dalam proses seleksi.
+            </p>
+          </div>
+  
+          <div class="footer-right">
+            <div class="footer-links">
+              <div class="footer-nav">
+                <h3>Navigasi</h3>
+                <ul>
+                  <li><a href="#">Beranda</a></li>
+                  <li><a href="#">Tentang Kami</a></li>
+                  <li><a href="#">Lowongan</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+  
+  
+              <div class="footer-social">
+                <h3>Ikuti Kami</h3>
+                <div class="social-icons">
+                  <a href="https://www.instagram.com/vinix7idn?igsh=MWNwODZzd3Z3bGU1MQ==" target="_blank">
+                    <img src="icons/instagram.png" alt="Instagram">
+                    <span>@vinix7idn</span>
+                  </a>
+                  <a href="https://www.tiktok.com/@vinix7idn?_r=1&_t=ZS-91WL2Tsd5MN" target="_blank">
+                    <img src="icons/tiktok.png" alt="TikTok">
+                    <span>@vinix7idn</span>
+                  </a>
+                  <a href="https://share.google/TO44qzAfZt3rzza9P" target="_blank">
+                    <img src="icons/linkedin.png" alt="LinkedIn">
+                    <span>VINIX7</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>© 2025 PT. Vinix7 Aurum — All Rights Reserved</p>
+        </div>
+      </footer>
+</body>
+</html>

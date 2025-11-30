@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lowongan Digital Forensic - Vinix Career</title>
+
+    <!-- Google Font Public Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link CSS Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR (SAMA DENGAN BERANDA) -->
+<nav class="navbar">
+    <div class="nav-container">
+        <img src="logo/logo vinix navbar.png" alt="Vinix Logo" class="logo">
+
+        <ul class="nav-menu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="lowongan.html" class="active">Lowongan</a></li>
+            <li><a href="bookmarks.html">Favorit</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- BANNER LOWONGAN -->
+<section class="hero-blue">
+  <div class="banner-container">
+      <span class="banner-label">Lowongan Digital Forensic</span>
+      <p class="banner-desc">Temukan berbagai lowongan kerja atau magang di bidang Digital Forensic. <br>
+        Kirim lamaran sekarang dan wujudkan impian karir Anda!</p>
+  </div>
+</section>
+
+<div class="job-controls">
+    <button class="back-btn" onclick="history.back()"><</button>
+    <div class="search-wrapper">
+      <img src="icons/search.png" alt="Search" class="search-icon-lowongan">
+      <input type="text" class="lowongan-search" placeholder="Cari Lowongan">
+  </div>
+
+    <select class="filter-select" id="keahlian">
+        <option value="">Bidang Keahlian</option>
+        <option value="lowongan_webdev_uiux.html">Web Development & UI/UX</option>
+        <option value="lowongan_entre_bisdig.html">Entrepreneurship / Bisnis Digital</option>
+        <option value="lowongan_cyber_security.html">Cyber Security</option>
+        <option value="lowongan_data_scientist.html">Data Scientist</option>
+        <option value="lowongan_digital_forensic.html">Digital Forensic</option>
+    </select>
+
+    <button class="filter-reset">Reset</button>
+</div>
+
+<!-- LIST LOWONGAN -->
+<section class="rekomendasi">
+    <div class="rekom-container">
+        <div class="jobs-wrapper">
+          <!-- CARD 1 -->
+          <div class="job-card">
+            <div class="bookmark-container">
+              <button class="bookmark-btn" data-job-id="digital-job1" onclick="handleBookmarkToggle(this)">
+                <img src="icons/love23.png" alt="Love" class="bookmark-icon" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-color=&quot;#003399&quot; width=&quot;24&quot; height=&quot;24&quot;><path d=&quot;M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z&quot;></path></svg>'">
+              </button>
+            </div>
+              <div class="card-top">
+                  <img src="logo/logo PT vinix.png" alt="Logo" class="company-logo">
+                  <div class="company-text">
+                    <div class="company-location">Yogyakarta, Indonesia</div>
+                    <div class="company-name">PT VINIX7 Aurum</div>
+                  </div>
+              </div>
+
+              <hr class="divider">
+
+              <h3 class="job-title">UI/UX Designer</h3>
+              <p class="job-desc">Memiliki kemampuan riset & analisis, desain visual & interaksi, serta mampu membuat user flow dan prototype yang efektif.</p>
+
+              <h5 class="job subtittle">Berlaku sampai: 10 Desember 2025</h5>
+              <div class="job-info">
+                <div class="info-item">
+                  <img src="icons/icon full time.png" class="icon">
+                  <span>Full Time</span>
+                </div>
+                <div class="info-item">
+                  <img src="icons/icon gaji.png" class="icon">
+                  <span>Rp 6 - 9 Juta</span>
+                </div>
+              </div>
+
+              <a href="pendaftaran.html" class="apply-btn">Lamar Sekarang</a>
+          </div>
+          <!-- CARD 2 -->
+          <div class="job-card">
+            <div class="bookmark-container">
+              <button class="bookmark-btn" data-job-id="digital-job2" onclick="handleBookmarkToggle(this)">
+                <img src="icons/love23.png" alt="Love" class="bookmark-icon" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-color=&quot;#003399&quot; width=&quot;24&quot; height=&quot;24&quot;><path d=&quot;M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z&quot;></path></svg>'">
+              </button>
+            </div>
+                <div class="card-top">
+                    <img src="logo/logo ilc.png" alt="Logo" class="company-logo">
+                    <div class="company-text">
+                      <div class="company-location">Jakarta, Indonesia</div>
+                      <div class="company-name">PT Inovasi Lentera Cipta Kreasi</div>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <h3 class="job-title">Junior Data Analyst</h3>
+                <p class="job-desc">Bertanggung jawab pada analisis data, pembuatan laporan, visualisasi data, dan memberikan insight untuk strategi bisnis berkelanjutan.</p>
+
+                <h5 class="job subtittle">Berlaku sampai: 04 Januari 2026</h5>
+                <div class="job-info">
+                  <div class="info-item">
+                    <img src="icons/icon full time.png" class="icon">
+                    <span>Intership/span>
+                  </div>
+                  <div class="info-item">
+                    <img src="icons/icon gaji.png" class="icon">
+                    <span>Rp 2,5 - 3 Juta</span>
+                  </div>
+                </div>
+
+                <a href="pendaftaran.html" class="apply-btn">Lamar Sekarang</a>
+          </div>
+          <!-- CARD 3 -->
+          <div class="job-card">
+            <div class="bookmark-container">
+              <button class="bookmark-btn" data-job-id="digital-job3" onclick="handleBookmarkToggle(this)">
+                <img src="icons/love23.png" alt="Love" class="bookmark-icon" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-color=&quot;#003399&quot; width=&quot;24&quot; height=&quot;24&quot;><path d=&quot;M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z&quot;></path></svg>'">
+              </button>
+            </div>
+                <div class="card-top">
+                    <img src="logo/logo telkom.png" alt="Logo" class="company-logo">
+                    <div class="company-text">
+                      <div class="company-location">Jakarta, Indonesia</div>
+                      <div class="company-name">PT Telkom Indonesia</div>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <h3 class="job-title">Data Visualization Specialist</h3>
+                <p class="job-desc">Memiliki kemampuan kemampuan Riset & Analisis Data, Desain Visual, dan Keahlian dalam alat visualisasi seperti Tableau atau Power BI.</p>
+                
+                <h5 class="job subtittle">Berlaku sampai: 17 Januari 2026</h5>
+                <div class="job-info">
+                  <div class="info-item">
+                    <img src="icons/icon full time.png" class="icon">
+                    <span>Full Time</span>
+                  </div>
+                  <div class="info-item">
+                    <img src="icons/icon gaji.png" class="icon">
+                    <span>Rp 5 - 6 Juta</span>
+                  </div>
+                </div>
+                <a href="pendaftaran.html" class="apply-btn">Lamar Sekarang</a>
+          </div>
+        </div>
+        <br>
+        <br>
+    </div>
+</section>
+<br>
+<br>
+<!-- Footer SECTION -->
+    <footer class="footer">
+      <div class="footer-container">
+
+        <div class="footer-left">
+          <h2 class="footer-title">PT. Vinix7 Aurum</h2>
+          <p class="footer-desc">
+            Bergabunglah menjadi bagian dari jaringan talenta terbaik dan dapatkan rekomendasi peluang kerja yang diprioritaskan.
+          </p>
+
+          <form class="subscribe-form" action="mailto:vinix@domain.com?subject=Subscribe Informasi Lowongan" method="POST" enctype="text/plain">
+            <input type="email" placeholder="Masukkan email kamu" required>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </form>
+
+          <p class="footer-small">
+            Dengan berlangganan, kamu akan mendapatkan rekomendasi peluang kerja terbaik dan prioritas dalam proses seleksi.
+          </p>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-links">
+            <div class="footer-nav">
+              <h3>Navigasi</h3>
+              <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Lowongan</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+
+
+            <div class="footer-social">
+              <h3>Ikuti Kami</h3>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/vinix7idn?igsh=MWNwODZzd3Z3bGU1MQ==" target="_blank">
+                  <img src="icons/instagram.png" alt="Instagram">
+                  <span>@vinix7idn</span>
+                </a>
+                <a href="https://www.tiktok.com/@vinix7idn?_r=1&_t=ZS-91WL2Tsd5MN" target="_blank">
+                  <img src="icons/tiktok.png" alt="TikTok">
+                  <span>@vinix7idn</span>
+                </a>
+                <a href="https://share.google/TO44qzAfZt3rzza9P" target="_blank">
+                  <img src="icons/linkedin.png" alt="LinkedIn">
+                  <span>VINIX7</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 PT. Vinix7 Aurum — All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
+
